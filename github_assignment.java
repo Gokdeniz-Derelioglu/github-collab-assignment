@@ -94,7 +94,7 @@ public class github_assignment {
             System.out.print(array[i]);
             if (i != array.length - 1)
             {
-                System.outprint(",");
+                System.out.print(",");
             }
         }
         System.out.print("}\n");

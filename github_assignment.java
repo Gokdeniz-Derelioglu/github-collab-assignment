@@ -2,7 +2,8 @@ import java.util.Random;
 
 public class github_assignment {
     public static void main(String[] args) {
-        
+        double[] array = {1,2,3,4,5};
+        System.out.println(differenceCalculator(array));
     }
 
     /** 
@@ -35,7 +36,7 @@ public class github_assignment {
         int size = array.length;
         double sum = 0;
         double average;
-        double[] diffArray = new int[array.length];
+        double[] diffArray = new double[array.length];
 
         for (double element : array)
         {

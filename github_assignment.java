@@ -62,7 +62,7 @@ public class github_assignment {
             }
             else
             {
-                System.out.println("***Please enter a valid option***");
+                System.out.println("*** Please enter a valid option ***");
             }
         }
     }
@@ -156,20 +156,24 @@ public class github_assignment {
      * 
      * @author Bora Balci
      */
-    private static double[] differenceCalculator (int[] array)
+    private static int[] differenceCalculator (int[] array)
     {
         // Defining the variables
         int size = array.length;
         int sum = 0;
-        double average;
-        double[] diffArray = new double[array.length];
+        int average;
+        int[] diffArray = new int[array.length];
 
         // Tracing through the array and adding all elements
         for (int element : array)
         {
             sum = sum + element;
         }
+
+        /* Note: There was no specification about the case when average is not an integer.
+           I assumed that we will do integer division. */
         average = sum / size;
+
         // Updating the elements of diffArray according to the average.
         for (int i = 0; i < diffArray.length; i++)
         {

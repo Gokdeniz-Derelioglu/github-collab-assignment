@@ -1,15 +1,18 @@
-import java.security.Key;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class github_assignment {
     public static void main(String[] args) {
-        displayMenu();
+        Scanner input = new Scanner(System.in);
+        int arraySize = input.nextInt();
+        int[] initialArray = createRandomArray(arraySize);
+        displayMenu(initialArray);
         System.out.println("Exiting system");
         System.out.println("Bye Bye!");   
     }
 
-    static void displayMenu(){
+    static void displayMenu(int[] array){
         int choice;
         boolean exit = false;
         while(!exit){
@@ -17,7 +20,8 @@ public class github_assignment {
             System.out.printf("%5s1- Find the minimum and maximum of the array%n", "");
             System.out.printf("%5s2- Find how much elements differ from average%n", "");
             System.out.printf("%5s3- Find the sum of odd and even indexes%n", "");
-            System.out.printf("%5s4- EXIT%n", "");
+            System.out.printf("%5s4- Find the average and the difference of the array");
+            System.out.printf("%5s5- EXIT%n", "");
             Scanner in = new Scanner(System.in);
             if(in.hasNextInt()){
                 choice = in.nextInt();
@@ -35,6 +39,9 @@ public class github_assignment {
                         //methods here
                         break;
                     case 4:
+                        //differenceCalculator method
+                        System.out.println(Arrays.toString(differenceCalculator(array)));
+                    case 5:
                         exit = true;
                         break;
                     default:
@@ -47,8 +54,6 @@ public class github_assignment {
                 System.out.println("***Please enter a valid option***");
             }
         }
-        double[] array = {1,2,3,4,5};
-        System.out.println(differenceCalculator(array));
     }
 
     /** 
@@ -76,14 +81,14 @@ public class github_assignment {
      * @return diffArray
      * @author Bora Balci
      */
-    private static double[] differenceCalculator (double[] array)
+    private static int[] differenceCalculator (int[] array)
     {
         int size = array.length;
-        double sum = 0;
-        double average;
-        double[] diffArray = new double[array.length];
+        int sum = 0;
+        int average;
+        int[] diffArray = new int[array.length];
 
-        for (double element : array)
+        for (int element : array)
         {
             sum = sum + element;
         }
@@ -141,34 +146,4 @@ public class github_assignment {
 
         return minSoFar;
     } 
-
-    /**
-     * This method finds the sum of odd indexed numbers.
-     * @param array
-     * @return oddSum
-     *
-     * @author Erkam Uysal
-     */
-    public static int oddIndexedSum (int[] array) {
-        int sum = 0;
-        for(int i = 1; i < array.length; i+=2) {
-            sum += array[i];
-        }
-        return sum;
-    }
-
-    /**
-     * This method finds the sum of even indexed numbers.
-     * @param array
-     * @return evenSum
-     *
-     * @author Erkam Uysal
-     */
-    public static int evenIndexedSum (int[] array) {
-        int sum = 0;
-        for(int i = 0; i < array.length; i+=2) {
-            sum += array[i];
-        }
-        return sum;
-    }
 }

@@ -144,6 +144,7 @@ public class github_assignment {
     {
         int maxSoFar = numbers[0]; // Taking the number in the first index as the max at start
 
+        // Goes through the entire array and changes the max number if it encounters a bigger number
         for (int arrayIndex = 1; arrayIndex < numbers.length; arrayIndex++)
         {
             if (maxSoFar < numbers[arrayIndex])
@@ -165,6 +166,7 @@ public class github_assignment {
     {
         int minSoFar = numbers[0]; // Taking the number in the first index as the min at start
 
+        // Goes through the entire array and changes the min number if it encounters a smaller number
         for (int arrayIndex = 1; arrayIndex < numbers.length; arrayIndex++)
         {
             if (minSoFar > numbers[arrayIndex])

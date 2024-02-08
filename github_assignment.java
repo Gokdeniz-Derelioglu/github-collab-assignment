@@ -80,7 +80,13 @@ public class github_assignment {
         return newArray;
     }
 
-    
+    /** 
+     * This method prints out a given array in String form.
+     * @param array, the array which is to be printed
+     * @return
+     * 
+     * @author Gökdeniz Derelioğlu
+     */
     private static void arrayToString(int[] array) {
         System.err.print("Current array at use: {");
         for(int i = 0; i < array.length; i++) {

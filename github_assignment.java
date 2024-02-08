@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 public class github_assignment {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int arraySize = input.nextInt();
+        int[] initialArray = createRandomArray(arraySize);
         displayMenu();
         System.out.println("Exiting system");
         System.out.println("Bye Bye!");   
     }
 
-    static void displayMenu(){
+    static void displayMenu(int[] array){
         int choice;
         boolean exit = false;
         while(!exit){

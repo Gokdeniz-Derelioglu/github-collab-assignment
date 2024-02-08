@@ -22,4 +22,33 @@ public class github_assignment {
         }
         return newArray;
     }
+
+    /**
+     * This method calculates the average of an array and returns an array consisting the difference
+     * of each element from the average, considering the element's indexes.
+     * @param array
+     * @return diffArray
+     * @author Bora Balci
+     */
+    private static double[] differenceCalculator (double[] array)
+    {
+        int size = array.length;
+        double sum = 0;
+        double average;
+        double[] diffArray = new int[array.length];
+
+        for (double element : array)
+        {
+            sum = sum + element;
+        }
+
+        average = sum / size;
+
+        for (int i = 0; i < diffArray.length; i++)
+        {
+            diffArray[i] = array[i] - average;
+        }
+        
+        return diffArray;
+    }
 }

@@ -36,7 +36,8 @@ public class github_assignment {
                         //methods here
                         break;
                     case 3:
-                        //methods here
+                        System.out.println ("Sum of the odd indexed elements in the array: " + oddIndexedSum(array));
+                        System.out.println ("Sum of the odd indexed elements in the array: " + evenIndexedSum(array));
                         break;
                     case 4:
                         //differenceCalculator method

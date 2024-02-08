@@ -1,8 +1,10 @@
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class github_assignment {
     public static void main(String[] args) {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
         displayMenu();
         System.out.println("Exiting system");
@@ -49,6 +51,9 @@ public class github_assignment {
         double[] array = {1,2,3,4,5};
         System.out.println(differenceCalculator(array));
 >>>>>>> ad9066d680e557361993065c8506d112fbe108e2
+=======
+    
+>>>>>>> Stashed changes
     }
 
     /** 

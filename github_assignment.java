@@ -68,7 +68,7 @@ public class github_assignment {
     /** 
      * This method creates an array of random numbers between (0,100)
      * @param arraySize, size of the array specified.
-     * @return
+     * @return newArray
      * 
      * @author Gökdeniz Derelioğlu
      */
@@ -87,7 +87,6 @@ public class github_assignment {
     /** 
      * This method prints out a given array in String form.
      * @param array, the array which is to be printed
-     * @return
      * 
      * @author Gökdeniz Derelioğlu
      */

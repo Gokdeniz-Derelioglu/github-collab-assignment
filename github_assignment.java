@@ -112,13 +112,13 @@ public class github_assignment {
      * 
      * @author Bora Balci
      */
-    private static int[] differenceCalculator (int[] array)
+    private static double[] differenceCalculator (int[] array)
     {
         // Defining the variables
         int size = array.length;
         int sum = 0;
-        int average;
-        int[] diffArray = new int[array.length];
+        double average;
+        double[] diffArray = new double[array.length];
 
         // Tracing through the array and adding all elements
         for (int element : array)

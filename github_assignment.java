@@ -30,6 +30,7 @@ public class github_assignment {
             System.out.printf("%5s2- Find how much elements differ from average%n", "");
             System.out.printf("%5s3- Find the sum of odd and even indexes%n", "");
             System.out.printf("%5s4- EXIT%n", "");
+            System.out.printf("Enter a number (1-4): ");
             Scanner in = new Scanner(System.in);
             
             if(in.hasNextInt()){

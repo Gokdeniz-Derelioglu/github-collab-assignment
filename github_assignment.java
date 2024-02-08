@@ -42,10 +42,11 @@ public class github_assignment {
                         System.out.println ("Minimum value of the array: " + findMinimum (array));
                         break; 
                     case 2:
-                        //differenceCalculator method
+                        // differenceCalculator method
                         System.out.println(Arrays.toString(differenceCalculator(array)));
                         break;
                     case 3:
+                        // odd&even index finder method
                         System.out.println ("Sum of the odd indexed elements in the array: " + oddIndexedSum(array));
                         System.out.println ("Sum of the even indexed elements in the array: " + evenIndexedSum(array));
                         break;

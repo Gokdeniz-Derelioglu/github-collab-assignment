@@ -20,7 +20,8 @@ public class github_assignment {
             System.out.printf("%5s1- Find the minimum and maximum of the array%n", "");
             System.out.printf("%5s2- Find how much elements differ from average%n", "");
             System.out.printf("%5s3- Find the sum of odd and even indexes%n", "");
-            System.out.printf("%5s4- EXIT%n", "");
+            System.out.printf("%5s4- Find the average and the difference of the array");
+            System.out.printf("%5s5- EXIT%n", "");
             Scanner in = new Scanner(System.in);
             if(in.hasNextInt()){
                 choice = in.nextInt();
@@ -36,6 +37,9 @@ public class github_assignment {
                         //methods here
                         break;
                     case 4:
+                        //differenceCalculator method
+                        System.out.println(Arrays.toString(differenceCalculator(array)));
+                    case 5:
                         exit = true;
                         break;
                     default:

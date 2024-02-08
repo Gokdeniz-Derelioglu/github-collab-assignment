@@ -104,36 +104,6 @@ public class github_assignment {
         System.out.print("}\n");
     }
 
-
-    /**
-     * This method calculates the average of an array and returns an array consisting the difference
-     * of each element from the average, considering the element's indexes.
-     * @param array
-     * @return diffArray
-     * 
-     * @author Bora Balci
-     */
-    private static double[] differenceCalculator (int[] array)
-    {
-        // Defining the variables
-        int size = array.length;
-        int sum = 0;
-        double average;
-        double[] diffArray = new double[array.length];
-
-        // Tracing through the array and adding all elements
-        for (int element : array)
-        {
-            sum = sum + element;
-        }
-        average = sum / size;
-        // Updating the elements of diffArray according to the average.
-        for (int i = 0; i < diffArray.length; i++)
-        {
-            diffArray[i] = array[i] - average;
-        }
-        return diffArray;
-    }
     /**
      * This method finds the number with the maximum value in a given array of integers.
      * @param numbers
@@ -177,6 +147,37 @@ public class github_assignment {
         }
         return minSoFar;
     }
+
+    /**
+     * This method calculates the average of an array and returns an array consisting the difference
+     * of each element from the average, considering the element's indexes.
+     * @param array
+     * @return diffArray
+     * 
+     * @author Bora Balci
+     */
+    private static double[] differenceCalculator (int[] array)
+    {
+        // Defining the variables
+        int size = array.length;
+        int sum = 0;
+        double average;
+        double[] diffArray = new double[array.length];
+
+        // Tracing through the array and adding all elements
+        for (int element : array)
+        {
+            sum = sum + element;
+        }
+        average = sum / size;
+        // Updating the elements of diffArray according to the average.
+        for (int i = 0; i < diffArray.length; i++)
+        {
+            diffArray[i] = array[i] - average;
+        }
+        return diffArray;
+    }
+    
     /**
     * This method finds the sum of odd indexed numbers.
     * @param array

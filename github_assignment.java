@@ -8,7 +8,7 @@ public class github_assignment {
         Scanner input = new Scanner(System.in);
         
         // Prompting the user
-        System.out.println("Enter the array size:");
+        System.out.print("Enter the array size: ");
         int arraySize = input.nextInt();
         int[] initialArray = createRandomArray(arraySize);
         arrayToString(initialArray);

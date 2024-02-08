@@ -99,9 +99,7 @@ public class github_assignment {
         {
             sum = sum + element;
         }
-
         average = sum / size;
-
         // Updating the elements of diffArray according to the average.
         for (int i = 0; i < diffArray.length; i++)
         {

@@ -24,7 +24,9 @@ public class github_assignment {
                 switch (choice)
                 {
                     case 1:
-                        //methods here
+                        // finding maximum/minimum value method
+                        System.out.println ("Maximum value of the array: " + findMaximum (array));
+                        System.out.println ("Minimum value of the array: " + findMinimum (array));
                         break; 
                     case 2:
                         //methods here

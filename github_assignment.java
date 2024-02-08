@@ -1,9 +1,9 @@
+import java.security.Key;
 import java.util.Random;
 import java.util.Scanner;
 
 public class github_assignment {
     public static void main(String[] args) {
-<<<<<<< HEAD
         displayMenu();
         System.out.println("Exiting system");
         System.out.println("Bye Bye!");   
@@ -45,10 +45,8 @@ public class github_assignment {
                 System.out.println("***Please enter a valid option***");
             }
         }
-=======
         double[] array = {1,2,3,4,5};
         System.out.println(differenceCalculator(array));
->>>>>>> ad9066d680e557361993065c8506d112fbe108e2
     }
 
     /** 
@@ -141,4 +139,34 @@ public class github_assignment {
 
         return minSoFar;
     } 
+
+    /**
+     * This method finds the sum of odd indexed numbers.
+     * @param array
+     * @return oddSum
+     *
+     * @author Erkam Uysal
+     */
+    public static int oddIndexedSum (int[] array) {
+        int sum = 0;
+        for(int i = 1; i < array.length; i+=2) {
+            sum += array[i];
+        }
+        return sum;
+    }
+
+    /**
+     * This method finds the sum of even indexed numbers.
+     * @param array
+     * @return evenSum
+     *
+     * @author Erkam Uysal
+     */
+    public static int evenIndexedSum (int[] array) {
+        int sum = 0;
+        for(int i = 0; i < array.length; i+=2) {
+            sum += array[i];
+        }
+        return sum;
+    }
 }

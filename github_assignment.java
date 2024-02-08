@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class github_assignment {
     public static void main(String[] args) {
+        // Defining and initializing the Scanner object
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter the array size: ");
+        
         // Prompting the user
-        System.out.println("Enter the array size:");
+        System.out.print("Enter the array size: ");
         int arraySize = input.nextInt();
         int[] initialArray = createRandomArray(arraySize);
         arrayToString(initialArray);

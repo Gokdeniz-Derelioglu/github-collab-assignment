@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class github_assignment {
     public static void main(String[] args) {
+<<<<<<< HEAD
         displayMenu();
         System.out.println("Exiting system");
         System.out.println("Bye Bye!");   
@@ -44,6 +45,10 @@ public class github_assignment {
                 System.out.println("***Please enter a valid option***");
             }
         }
+=======
+        double[] array = {1,2,3,4,5};
+        System.out.println(differenceCalculator(array));
+>>>>>>> ad9066d680e557361993065c8506d112fbe108e2
     }
 
     /** 
@@ -76,7 +81,7 @@ public class github_assignment {
         int size = array.length;
         double sum = 0;
         double average;
-        double[] diffArray = new int[array.length];
+        double[] diffArray = new double[array.length];
 
         for (double element : array)
         {
@@ -92,4 +97,48 @@ public class github_assignment {
         
         return diffArray;
     }
+
+    /**
+     * This method finds the number with the maximum value in a given array of integers.
+     * @param numbers
+     * @return max number
+     *
+     * @author Ceyhun Deniz Keleş
+     */
+    public static int findMaximum (int[] numbers)
+    {
+        int maxSoFar = numbers[0]; // Taking the number in the first index as the max at start
+
+        for (int arrayIndex = 1; arrayIndex < numbers.length; arrayIndex++)
+        {
+            if (maxSoFar < numbers[arrayIndex])
+            {
+                maxSoFar = numbers[arrayIndex];
+            }
+        }
+
+        return maxSoFar;
+    }
+
+    /**
+     * This method finds the number with the minimum value in a given array of integers.
+     * @param numbers
+     * @return min number
+     *
+     * @author Ceyhun Deniz Keleş
+     */
+    public static int findMinimum (int[] numbers)
+    {
+        int minSoFar = numbers[0]; // Taking the number in the first index as the min at start
+
+        for (int arrayIndex = 1; arrayIndex < numbers.length; arrayIndex++)
+        {
+            if (minSoFar > numbers[arrayIndex])
+            {
+                minSoFar = numbers[arrayIndex];
+            }
+        }
+
+        return minSoFar;
+    } 
 }

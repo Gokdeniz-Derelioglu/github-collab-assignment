@@ -5,12 +5,9 @@ import java.util.Scanner;
 public class github_assignment {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-<<<<<<< HEAD
         System.out.print("Enter the array size: ");
-=======
         // Prompting the user
         System.out.println("Enter the array size:");
->>>>>>> 5f84f9cb9ead44b46bf8f05b6fa3041eff0c326a
         int arraySize = input.nextInt();
         int[] initialArray = createRandomArray(arraySize);
         arrayToString(initialArray);

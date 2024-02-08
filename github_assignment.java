@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class github_assignment {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the array size:");
+        System.out.print("Enter the array size: ");
         int arraySize = input.nextInt();
         int[] initialArray = createRandomArray(arraySize);
+        arrayToString(initialArray);
         displayMenu(initialArray);
         System.out.println("Exiting system");
         System.out.println("Bye Bye!");   
@@ -71,6 +72,20 @@ public class github_assignment {
         }
         return newArray;
     }
+
+    
+    private static void arrayToString(int[] array) {
+        System.err.print("Current array at use: {");
+        for(int i = 0; i < array.length; i++) {
+            System.err.print(array[i]);
+            if (i != array.length)
+            {
+                System.err.print(",");
+            }
+        }
+        System.err.print("}\n");
+    }
+
 
     /**
      * This method calculates the average of an array and returns an array consisting the difference

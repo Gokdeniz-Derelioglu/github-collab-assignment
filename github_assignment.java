@@ -17,7 +17,10 @@ public class github_assignment {
         System.out.println("Bye Bye!");   
     }
 
-    // Menu prompt
+    /** 
+     * This method displays the menu prompt for the user to
+     * @author Eser Tekin Tekeli
+     */
     static void displayMenu(int[] array){
         int choice;
         boolean exit = false;

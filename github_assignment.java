@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class github_assignment {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter the array size");
+        System.out.println("Enter the array size:");
         int arraySize = input.nextInt();
         int[] initialArray = createRandomArray(arraySize);
         displayMenu(initialArray);

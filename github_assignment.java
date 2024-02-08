@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class github_assignment {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Enter the array size:");
         int arraySize = input.nextInt();
         int[] initialArray = createRandomArray(arraySize);
         displayMenu(initialArray);
@@ -20,8 +21,7 @@ public class github_assignment {
             System.out.printf("%5s1- Find the minimum and maximum of the array%n", "");
             System.out.printf("%5s2- Find how much elements differ from average%n", "");
             System.out.printf("%5s3- Find the sum of odd and even indexes%n", "");
-            System.out.printf("%5s4- Find the average and the difference of the array");
-            System.out.printf("%5s5- EXIT%n", "");
+            System.out.printf("%5s4- EXIT%n", "");
             Scanner in = new Scanner(System.in);
             if(in.hasNextInt()){
                 choice = in.nextInt();
@@ -33,16 +33,14 @@ public class github_assignment {
                         System.out.println ("Minimum value of the array: " + findMinimum (array));
                         break; 
                     case 2:
-                        //methods here
+                        //differenceCalculator method
+                        System.out.println(Arrays.toString(differenceCalculator(array)));
                         break;
                     case 3:
                         System.out.println ("Sum of the odd indexed elements in the array: " + oddIndexedSum(array));
                         System.out.println ("Sum of the odd indexed elements in the array: " + evenIndexedSum(array));
                         break;
                     case 4:
-                        //differenceCalculator method
-                        System.out.println(Arrays.toString(differenceCalculator(array)));
-                    case 5:
                         exit = true;
                         break;
                     default:
@@ -67,7 +65,7 @@ public class github_assignment {
         int x;
         Random random = new Random();
         int[] newArray = new int[arraySize]; 
-        for(int i = 0; i<= arraySize; i++)
+        for(int i = 0; i < arraySize; i++)
         {
             x = random.nextInt(101);
             newArray[i] = x;

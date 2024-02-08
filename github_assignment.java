@@ -18,7 +18,7 @@ public class github_assignment {
     }
 
     /** 
-     * This method displays the menu prompt for the user to
+     * This method displays the menu prompt for the user to pick options
      * @author Eser Tekin Tekeli
      */
     static void displayMenu(int[] array){

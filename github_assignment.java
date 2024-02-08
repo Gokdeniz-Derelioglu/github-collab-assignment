@@ -89,15 +89,15 @@ public class github_assignment {
      * @author Gökdeniz Derelioğlu
      */
     private static void arrayToString(int[] array) {
-        System.err.print("Current array at use: {");
+        System.out.print("Current array at use: {");
         for(int i = 0; i < array.length; i++) {
-            System.err.print(array[i]);
-            if (i != array.length)
+            System.out.print(array[i]);
+            if (i != array.length - 1)
             {
-                System.err.print(",");
+                System.outprint(",");
             }
         }
-        System.err.print("}\n");
+        System.out.print("}\n");
     }
 
 

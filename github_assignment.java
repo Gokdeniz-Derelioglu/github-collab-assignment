@@ -4,8 +4,11 @@ import java.util.Scanner;
 
 public class github_assignment {
     public static void main(String[] args) {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> 68364e1e7129a6c0f85918d24722fd2824c591c1
         displayMenu();
         System.out.println("Exiting system");
         System.out.println("Bye Bye!");   
@@ -47,6 +50,7 @@ public class github_assignment {
                 System.out.println("***Please enter a valid option***");
             }
         }
+<<<<<<< HEAD
 =======
         double[] array = {1,2,3,4,5};
         System.out.println(differenceCalculator(array));
@@ -54,6 +58,8 @@ public class github_assignment {
 =======
     
 >>>>>>> Stashed changes
+=======
+>>>>>>> 68364e1e7129a6c0f85918d24722fd2824c591c1
     }
 
     /** 

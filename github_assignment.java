@@ -38,7 +38,7 @@ public class github_assignment {
                         break;
                     case 3:
                         System.out.println ("Sum of the odd indexed elements in the array: " + oddIndexedSum(array));
-                        System.out.println ("Sum of the odd indexed elements in the array: " + evenIndexedSum(array));
+                        System.out.println ("Sum of the even indexed elements in the array: " + evenIndexedSum(array));
                         break;
                     case 4:
                         exit = true;

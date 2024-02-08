@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class github_assignment {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        // Prompting the user
         System.out.println("Enter the array size:");
         int arraySize = input.nextInt();
         int[] initialArray = createRandomArray(arraySize);
@@ -13,6 +14,7 @@ public class github_assignment {
         System.out.println("Bye Bye!");   
     }
 
+    // Menu prompt
     static void displayMenu(int[] array){
         int choice;
         boolean exit = false;
@@ -23,6 +25,7 @@ public class github_assignment {
             System.out.printf("%5s3- Find the sum of odd and even indexes%n", "");
             System.out.printf("%5s4- EXIT%n", "");
             Scanner in = new Scanner(System.in);
+            
             if(in.hasNextInt()){
                 choice = in.nextInt();
                 switch (choice)
@@ -49,7 +52,8 @@ public class github_assignment {
                 }
                     
             }
-            else{
+            else
+            {
                 System.out.println("***Please enter a valid option***");
             }
         }
@@ -59,7 +63,8 @@ public class github_assignment {
      * This method creates an array of random numbers between (0,100)
      * @param arraySize, size of the array specified.
      * @return
-     * Written by Gökdeniz Derelioğlu
+     * 
+     * @author Gökdeniz Derelioğlu
      */
     private static int[] createRandomArray(int arraySize) {
         int x;
@@ -78,15 +83,18 @@ public class github_assignment {
      * of each element from the average, considering the element's indexes.
      * @param array
      * @return diffArray
+     * 
      * @author Bora Balci
      */
     private static int[] differenceCalculator (int[] array)
     {
+        // Defining the variables
         int size = array.length;
         int sum = 0;
         int average;
         int[] diffArray = new int[array.length];
 
+        // Tracing through the array and adding all elements
         for (int element : array)
         {
             sum = sum + element;
@@ -94,14 +102,13 @@ public class github_assignment {
 
         average = sum / size;
 
+        // Updating the elements of diffArray according to the average.
         for (int i = 0; i < diffArray.length; i++)
         {
             diffArray[i] = array[i] - average;
         }
-        
         return diffArray;
     }
-
     /**
      * This method finds the number with the maximum value in a given array of integers.
      * @param numbers
@@ -123,7 +130,6 @@ public class github_assignment {
 
         return maxSoFar;
     }
-
     /**
      * This method finds the number with the minimum value in a given array of integers.
      * @param numbers
@@ -142,7 +148,6 @@ public class github_assignment {
                 minSoFar = numbers[arrayIndex];
             }
         }
-
         return minSoFar;
     }
     /**
@@ -159,7 +164,6 @@ public class github_assignment {
        }
        return sum;
    }
-
    /**
     * This method finds the sum of even indexed numbers.
     * @param array

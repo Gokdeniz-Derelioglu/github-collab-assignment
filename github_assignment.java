@@ -1,8 +1,49 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class github_assignment {
     public static void main(String[] args) {
-        
+        displayMenu();
+        System.out.println("Exiting system");
+        System.out.println("Bye Bye!");   
+    }
+
+    static void displayMenu(){
+        int choice;
+        boolean exit = false;
+        while(!exit){
+            System.out.printf("Menu:%n");
+            System.out.printf("%5s1- Find the minimum and maximum of the array%n", "");
+            System.out.printf("%5s2- Find how much elements differ from average%n", "");
+            System.out.printf("%5s3- Find the sum of odd and even indexes%n", "");
+            System.out.printf("%5s4- EXIT%n", "");
+            Scanner in = new Scanner(System.in);
+            if(in.hasNextInt()){
+                choice = in.nextInt();
+                switch (choice)
+                {
+                    case 1:
+                        //methods here
+                        break; 
+                    case 2:
+                        //methods here
+                        break;
+                    case 3:
+                        //methods here
+                        break;
+                    case 4:
+                        exit = true;
+                        break;
+                    default:
+                        System.out.println("***Please enter a valid option***");
+                        break;
+                }
+                    
+            }
+            else{
+                System.out.println("***Please enter a valid option***");
+            }
+        }
     }
 
     /** 

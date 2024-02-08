@@ -146,5 +146,34 @@ public class github_assignment {
         }
 
         return minSoFar;
-    } 
+    }
+    /**
+    * This method finds the sum of odd indexed numbers.
+    * @param array
+    * @return oddSum
+    *
+    * @author Erkam Uysal
+    */
+   public static int oddIndexedSum (int[] array) {
+       int sum = 0;
+       for(int i = 1; i < array.length; i+=2) {
+           sum += array[i];
+       }
+       return sum;
+   }
+
+   /**
+    * This method finds the sum of even indexed numbers.
+    * @param array
+    * @return evenSum
+    *
+    * @author Erkam Uysal
+    */
+   public static int evenIndexedSum (int[] array) {
+       int sum = 0;
+       for(int i = 0; i < array.length; i+=2) {
+           sum += array[i];
+       }
+       return sum;
+   }
 }

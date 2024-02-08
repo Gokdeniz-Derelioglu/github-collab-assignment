@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class github_assignment {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("Enter the array size");
         int arraySize = input.nextInt();
         int[] initialArray = createRandomArray(arraySize);
         displayMenu(initialArray);
@@ -66,7 +67,7 @@ public class github_assignment {
         int x;
         Random random = new Random();
         int[] newArray = new int[arraySize]; 
-        for(int i = 0; i<= arraySize; i++)
+        for(int i = 0; i < arraySize; i++)
         {
             x = random.nextInt(101);
             newArray[i] = x;

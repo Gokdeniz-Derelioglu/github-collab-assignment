@@ -7,7 +7,7 @@ public class github_assignment {
         Scanner input = new Scanner(System.in);
         int arraySize = input.nextInt();
         int[] initialArray = createRandomArray(arraySize);
-        displayMenu();
+        displayMenu(initialArray);
         System.out.println("Exiting system");
         System.out.println("Bye Bye!");   
     }
@@ -79,14 +79,14 @@ public class github_assignment {
      * @return diffArray
      * @author Bora Balci
      */
-    private static double[] differenceCalculator (double[] array)
+    private static int[] differenceCalculator (int[] array)
     {
         int size = array.length;
-        double sum = 0;
-        double average;
-        double[] diffArray = new double[array.length];
+        int sum = 0;
+        int average;
+        int[] diffArray = new int[array.length];
 
-        for (double element : array)
+        for (int element : array)
         {
             sum = sum + element;
         }
